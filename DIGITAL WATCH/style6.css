@@ -1,0 +1,107 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #dbe3e7;
+  transition: background-color 0.5s;
+}
+
+/* Center Container */
+.container {
+  display: flex;                /* NEW: stack elements */
+  flex-direction: column;       /* NEW: vertical layout */
+  align-items: center;          /* NEW: center items horizontally */
+  text-align: center;
+}
+
+/* Theme Toggle Button */
+#themeToggle {
+  background: linear-gradient(90deg, #00f2fe, #4facfe, #04372c);
+  border: none;
+  padding: 15px 30px;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 30px;          /* UPDATED: smaller, cleaner spacing */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+/* Clock Container */
+.clock {
+  background-color: #2f3640;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+/* Days of the Week */
+.days {
+  display: flex;
+  justify-content: space-between;
+  color: #a4b0be;
+  margin-bottom: 20px;
+}
+
+.days span {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Highlight Active Day */
+.days .active {
+  color: #ffffff;
+  text-shadow: 0 0 8px #ffffff, 0 0 12px #ffffff;
+}
+
+/* Digital Clock Time */
+.time {
+  font-family: 'Digital-7', monospace;
+  font-size: 3rem;
+  color: #dcdde1;
+}
+
+/* Dark Theme Styles */
+.dark body {
+  background-color: #1e272e;
+}
+
+.dark .clock {
+  background-color: #0f141a;
+}
+
+.dark #themeToggle {
+  background: linear-gradient(90deg, #26d0ce, #1a2980);
+}
+#resetTime {
+  background: linear-gradient(135deg, #2d336d 0%, #5e2370 100%);
+  color: #faf9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 10px;
+}
+
+#resetTime:hover {
+  background: linear-gradient(135deg, #66a6ff 0%, #89f7fe 100%);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+#resetTime:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
