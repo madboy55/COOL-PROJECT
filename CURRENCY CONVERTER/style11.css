@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 
- body {
+body {
   margin: 0;
   padding: 0;
   font-family: 'Orbitron', sans-serif;
@@ -11,7 +11,6 @@
   align-items: center;
   padding-top: 30px;
 }
-
 
 .heading {
   font-family: 'Orbitron', sans-serif;
@@ -32,12 +31,13 @@ hr {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
-  padding: 30px;
+  padding: 40px 50px; /* increased padding */
   margin-left: 165px;
   width: 100%;
-  max-width: 700px;
+  max-width: 850px; /* made it wider */
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
   color: white;
+  font-size: 1.1rem; /* slightly bigger font */
 }
 
 input,
@@ -45,8 +45,8 @@ select,
 .input-group-text {
   border-radius: 10px;
   border: none;
-  padding: 10px;
-  font-size: 1rem;
+  padding: 15px; /* bigger padding */
+  font-size: 1.1rem; /* bigger font */
   font-family: 'Orbitron', sans-serif;
   background-color: rgba(255, 255, 255, 0.8);
   color: #000;
@@ -58,21 +58,22 @@ input::placeholder {
 
 label {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: #f2f2f2;
 }
 
 button {
   font-family: 'Orbitron', sans-serif;
-  padding: 12px 25px;
+  padding: 15px 35px; /* bigger buttons */
   border: none;
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background: linear-gradient(90deg, #00c9ff, #92fe9d);
   color: #000;
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 5px 20px rgba(0, 150, 136, 0.4);
+  min-width: 130px;
 }
 
 button:hover {
@@ -81,9 +82,9 @@ button:hover {
 }
 
 #finalAmount {
-  margin-top: 30px;
+  margin-top: 40px;
   background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px 25px;
+  padding: 20px 30px;
   border-radius: 15px;
   color: #fff;
   text-shadow: 1px 1px 2px #000;
@@ -91,12 +92,13 @@ button:hover {
 
 .finalValue {
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 @media (max-width: 768px) {
   .main {
-    padding: 20px;
+    padding: 30px 20px;
+    margin-left: 0;
   }
 
   .heading {
