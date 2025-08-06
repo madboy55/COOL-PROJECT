@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.fan-container {
+  text-align: center;
+}
+
+.fan-body {
+  width: 300px;
+  height: 300px;
+  border: 10px solid rgb(255, 0, 64);
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 0 20px rgb(255, 0, 0);
+}
+
+.fan-blades {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+}
+
+.blade {
+  width: 60px;
+  height: 120px;
+  background: darkslategrey;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%) rotate(0deg);
+  transform-origin: 50% 100%;
+}
+
+.blade1 { transform: translate(-50%, -100%) rotate(0deg); }
+.blade2 { transform: translate(-50%, -100%) rotate(90deg); }
+.blade3 { transform: translate(-50%, -100%) rotate(180deg); }
+.blade4 { transform: translate(-50%, -100%) rotate(270deg); }
+
+.fan-center {
+  width: 60px;
+  height: 60px;
+  background: #2e355a;
+  border: 10px solid #00000099;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+.controls button {
+  width: 50px;
+  height: 50px;
+  margin: 0 5px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.controls button:hover {
+  transform: scale(1.1);
+}
+
+button.on {
+  background-color: #00ff00;
+  color: #000;
+}
+
+button.off {
+  background-color: red;
+  color: white;
+}
+
+.controls button:nth-child(n+3) {
+  background-color: #ccc;
+}

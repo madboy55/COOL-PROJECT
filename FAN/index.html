@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Animated Fan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="fan-container">
+    <div class="fan-body">
+      <div class="fan-blades" id="fan">
+        <div class="blade blade1"></div>
+        <div class="blade blade2"></div>
+        <div class="blade blade3"></div>
+        <div class="blade blade4"></div>
+        <div class="fan-center"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button class="on" onclick="turnOn()">ON</button>
+      <button class="off" onclick="turnOff()">OFF</button>
+      <button onclick="setSpeed(1)">1</button>
+      <button onclick="setSpeed(2)">2</button>
+      <button onclick="setSpeed(3)">3</button> 
+      <button onclick="setSpeed(3)">4</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
